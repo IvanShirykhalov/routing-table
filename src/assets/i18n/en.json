@@ -1,0 +1,16 @@
+{
+  "sidebar": {
+    "routes": "Routes",
+    "settings": "Settings"
+  },
+  "pages": {
+    "routes": {
+      "title": "Active IPv4 Routes",
+      "table": {
+        "address": "Destination Address",
+        "gateway": "Gateway",
+        "interface": "Interface"
+      }
+    }
+  }
+}

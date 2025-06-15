@@ -1,0 +1,16 @@
+{
+  "sidebar": {
+    "routes": "Маршруты",
+    "settings": "Настройки"
+  },
+  "pages": {
+    "routes": {
+      "title": "Действующие маршруты IPv4",
+      "table": {
+        "address": "Адрес назначения",
+        "gateway": "Шлюз",
+        "interface": "Интерфейс"
+      }
+    }
+  }
+}

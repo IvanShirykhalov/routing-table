@@ -1,0 +1,9 @@
+<button mat-icon-button
+        (click)="toggleLanguage()"
+        [matTooltip]="'Switch language'"
+        aria-label="Change language">
+  <img [src]="getFlagPath()"
+       alt="Language flag"
+       class="flag-icon"
+       [ngClass]="{'active': true}">
+</button>

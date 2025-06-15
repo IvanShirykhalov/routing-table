@@ -1,0 +1,41 @@
+<h2>{{ 'pages.routes.title' | translate }}</h2>
+
+<table mat-table [dataSource]="dataSource" class="custom-table">
+
+  <!-- Адрес назначения -->
+  <ng-container matColumnDef="address">
+    <th width="33%" mat-header-cell *matHeaderCellDef>
+      {{ 'pages.routes.table.address' | translate }}
+      <span class="sort-arrow" (click)="sortRoutes('address')">
+        {{ getArrow('address') }}
+      </span>
+    </th>
+    <td mat-cell *matCellDef="let route">{{ route.address }}</td>
+  </ng-container>
+
+  <!-- Шлюз -->
+  <ng-container matColumnDef="gateway">
+    <th width="33%" mat-header-cell *matHeaderCellDef>
+      {{ 'pages.routes.table.gateway' | translate }}
+      <span class="sort-arrow" (click)="sortRoutes('gateway')">
+        {{ getArrow('gateway') }}
+      </span>
+    </th>
+    <td mat-cell *matCellDef="let route">{{ route.gateway }}</td>
+  </ng-container>
+
+  <!-- Интерфейс -->
+  <ng-container matColumnDef="interface">
+    <th width="33%" mat-header-cell *matHeaderCellDef>
+      {{ 'pages.routes.table.interface' | translate }}
+      <span class="sort-arrow" (click)="sortRoutes('interface')">
+        {{ getArrow('interface') }}
+      </span>
+    </th>
+    <td mat-cell *matCellDef="let route">{{ route.interface }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
