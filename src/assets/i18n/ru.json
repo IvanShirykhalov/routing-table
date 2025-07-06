@@ -1,26 +1,16 @@
 {
-  "task-list": {
-    "title": "Список задач",
-    "find-task": "Найти задачу",
-    "add-task": "Добавить задачу",
-    "list": {
-      "name": "Наименование",
-      "description": "Описание",
-      "status": "Статус"
-    }
+  "sidebar": {
+    "routes": "Маршруты",
+    "settings": "Настройки"
   },
-  "task-details": {
-    "new-task": "Новая задача",
-    "edit-task": "Редактирование задачи",
-    "title-label": "Название",
-    "description-label": "Описание",
-    "completed-label": "Выполнено",
-    "back-button": "Назад",
-    "create-button": "Создать",
-    "save-button": "Сохранить",
-    "title-required-error": "Название обязательно",
-    "title-length-error": "Название должно быть не более {{maxLength}} символов",
-    "description-length-error": "Описание должно быть не более {{maxLength}} символов",
-    "validation-errors": "Исправьте ошибки в форме"
+  "pages": {
+    "routes": {
+      "title": "Действующие маршруты IPv4",
+      "table": {
+        "address": "Адрес назначения",
+        "gateway": "Шлюз",
+        "interface": "Интерфейс"
+      }
+    }
   }
 }

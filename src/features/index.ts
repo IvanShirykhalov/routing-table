@@ -1,2 +1,2 @@
-export * from './task-list';
-export * from './task-details';
+export * from './routes-table';
+export * from './settings';

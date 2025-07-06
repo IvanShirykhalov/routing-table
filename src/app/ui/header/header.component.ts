@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, output, OutputEmitterRef} from '@angular/core';
 import { LanguageSwitcherComponent } from '../../language-switcher';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
@@ -20,4 +20,12 @@ import { MatIconModule } from '@angular/material/icon';
   ]
 })
 export class HeaderComponent {
+  public sidenavToggle: OutputEmitterRef<void> = output<void>();
+
+  /**
+   * Обработчик клика по иконке меню
+   */
+  public onMenuClick(): void {
+    this.sidenavToggle.emit();
+  }
 }

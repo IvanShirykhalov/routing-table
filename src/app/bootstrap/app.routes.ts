@@ -1,9 +1,20 @@
-import { Routes } from '@angular/router';
-import { TaskListComponent, TaskDetailsComponent } from '../../features';
+import {Routes} from '@angular/router';
+import {LayoutComponent} from '../../shared';
 
 export const routes: Routes = [
-  { path: 'tasks', component: TaskListComponent },
-  { path: 'tasks/create', component: TaskDetailsComponent },
-  { path: 'tasks/:id', component: TaskDetailsComponent },
-  { path: '', redirectTo: '/tasks', pathMatch: 'full' }
+  {
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'routes',
+        loadComponent: () => import('../../features/routes-table').then(c => c.RoutesTableComponent)
+      },
+      {
+        path: 'settings',
+        loadComponent: () => import('../../features/settings').then(c => c.SettingsComponent)
+      },
+      {path: '', redirectTo: 'routes', pathMatch: 'full'}
+    ]
+  }
 ];
