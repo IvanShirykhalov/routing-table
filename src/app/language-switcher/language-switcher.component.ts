@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { MatIconButton } from '@angular/material/button';
 import { MatTooltip } from '@angular/material/tooltip';
@@ -7,18 +7,25 @@ import { CommonModule } from '@angular/common';
 /**
  * Компонент переключателя языка приложения
  */
- @Component({
+@Component({
   selector: 'app-language-switcher',
   standalone: true,
   imports: [MatIconButton, MatTooltip, CommonModule],
-  templateUrl: `./language-switcher.component.html`,
+  templateUrl: './language-switcher.component.html',
   styleUrls: ['./language-switcher.component.scss'],
 })
-export class LanguageSwitcherComponent {
+export class LanguageSwitcherComponent implements OnInit {
   public currentLang: string;
 
   constructor(private translate: TranslateService) {
     this.currentLang = translate.currentLang || 'ru';
+  }
+
+  /**
+   * @inheritDoc
+   */
+  public ngOnInit(): void {
+    this.translate.use(this.currentLang);
   }
 
   /**

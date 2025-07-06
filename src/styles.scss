@@ -23,3 +23,8 @@ body {
   padding: 24px;
   overflow: hidden;
 }
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(2px);
+}

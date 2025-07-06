@@ -1,0 +1,62 @@
+mat-card {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+mat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+  padding: 0;
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    flex-grow: 1;
+    text-align: justify;
+    padding-right: 40px;
+  }
+
+  .close-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.54);
+  }
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+mat-form-field {
+  width: 100%;
+
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  button {
+    min-width: 120px;
+  }
+}
+
+mat-checkbox {
+  align-self: flex-start;
+  margin-top: -0.5rem;
+}

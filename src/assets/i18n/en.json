@@ -1,16 +1,26 @@
 {
-  "sidebar": {
-    "routes": "Routes",
-    "settings": "Settings"
-  },
-  "pages": {
-    "routes": {
-      "title": "Active IPv4 Routes",
-      "table": {
-        "address": "Destination Address",
-        "gateway": "Gateway",
-        "interface": "Interface"
-      }
+  "task-list": {
+    "title": "Task list",
+    "find-task": "Find task",
+    "add-task": "Add task",
+    "list": {
+      "name": "Name",
+      "description": "Description",
+      "status": "Status"
     }
+  },
+  "task-details": {
+    "new-task": "New task",
+    "edit-task": "Edit task",
+    "title-label": "Title",
+    "description-label": "Description",
+    "completed-label": "Completed",
+    "back-button": "Back",
+    "create-button": "Create",
+    "save-button": "Save",
+    "title-required-error": "Title is required",
+    "title-length-error": "Title must be no more than {{maxLength}} characters",
+    "description-length-error": "Description must be no more than {{maxLength}} characters",
+    "validation-errors": "Fix form errors"
   }
 }

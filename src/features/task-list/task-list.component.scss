@@ -1,0 +1,25 @@
+.task-row {
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.04);
+  }
+
+  mat-checkbox, button[color="warn"] {
+    cursor: default;
+    pointer-events: auto;
+  }
+}
+
+
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.filter-field, .add-button {
+  height: 56px;
+  width: 220px;
+}
